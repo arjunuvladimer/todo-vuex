@@ -18,7 +18,11 @@ export default{
         }
     },
     methods:{
+        // addTodo is method you created
         addTodo: function (){
+            // dispatch function an inbuilt function 
+            // is carrying paylod => this from component to 
+            // store action creator
             this.$store.dispatch("addTodo", this)
             this.id++
             this.task = ""

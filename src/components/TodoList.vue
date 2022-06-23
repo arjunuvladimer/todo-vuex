@@ -22,6 +22,7 @@
 export default{
     computed:{
         todos(){
+            // Subscription 
             return this.$store.getters.getTodos
         }
     },
